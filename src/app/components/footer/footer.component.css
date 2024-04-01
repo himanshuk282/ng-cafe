@@ -1,0 +1,16 @@
+body {
+    background-color: #343a40; /* Dark background color */
+  }
+  .footer {
+    background-color: #212529; /* Dark footer background color */
+    color: #ffffff; /* White text color */
+    padding: 20px 0;
+  }
+  .social-icons a {
+    color: #ffffff; /* White color for social icons */
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  .social-icons a:hover {
+    color: #ffc107; /* Yellow color for hover */
+  }

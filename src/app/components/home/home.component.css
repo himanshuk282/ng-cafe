@@ -1,0 +1,102 @@
+body {
+    background-color: #f8f9fa; /* Light background color */
+  }
+  .carousel-item {
+    height: 100vh; /* Full height for carousel items */
+    background-position: center;
+    background-size: cover;
+  }
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background for caption */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    /* width: 100%; */
+  }
+  .carousel-caption h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .order-button {
+    background-color: #ffc107; /* Yellow background for order button */
+    color: #212529; /* Dark text color */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for button */
+  }
+  .order-button:hover {
+    background-color: #ffca28; /* Lighter yellow background on hover */
+  }
+  @media (min-width: 768px) {
+    .carousel-caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+      height: 100vh;
+      width: 40%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: auto;
+      transform: translateY(0);
+      margin-left: auto;
+      transition: width 0.5s ease;
+    }
+    .carousel-caption:hover {
+      width: 50%;
+    }
+  }
+  .gradient-section {
+    background: linear-gradient(to right, #040404, #000000, #2e2e2e); /* Gradient background */
+    color: #ffffff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+  }
+  .content-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background for box */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    padding: 0; /* Remove padding to prevent overflow */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }  
+  .icon-button img {
+    width: 120px; /* Set a fixed width for the image */
+    height: auto; 
+  }
+  .icon-button:hover {
+    transform: scale(1.1);
+  }
+  
+  img.services_image {
+    margin-top: -110px;
+    position: relative;
+    max-width: 100%;
+    bottom: 0;
+  }
+  .service-section {
+    /* background-color: transparent; */
+    border: none;
+    padding: 0; /* Remove padding to prevent overflow */
+    margin: 0 5px;
+    /* cursor: pointer; */
+    transition: transform 0.3s ease;
+  } 
+  .service-section:hover {
+    transform: scale(1.1);
+  }
