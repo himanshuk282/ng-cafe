@@ -10,7 +10,8 @@ declare var bootstrap: any;
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-
+  zomatoUrl:string = "http://zoma.to/r/19891237";
+  swiggyUrl:string = "https://www.swiggy.com/restaurants/trend-cafe-harjeet-bhawan-court-road-nawabganj-bharabanki-500620";
   constructor() { }
 
   ngOnInit(): void {
@@ -20,5 +21,11 @@ export class HomeComponent implements OnInit {
     //   interval: 5000, // Change slide every 5 seconds
     //   wrap: true // Loop back to first slide after last slide
     // });
+  }
+  onZomatoRedirect(){
+    window.open(this.zomatoUrl, '_blank');
+  }
+  onSwiggyRedirect(){
+    window.open(this.swiggyUrl, '_blank');
   }
 }
