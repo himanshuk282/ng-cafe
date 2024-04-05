@@ -1,16 +1,86 @@
-body {
-    background-color: #343a40; /* Dark background color */
-  }
-  .footer {
-    background-color: #212529; /* Dark footer background color */
-    color: #ffffff; /* White text color */
-    padding: 20px 0;
-  }
-  .social-icons a {
-    color: #ffffff; /* White color for social icons */
-    font-size: 24px;
-    margin-right: 10px;
-  }
-  .social-icons a:hover {
-    color: #ffc107; /* Yellow color for hover */
-  }
+#footer {
+	background-color: #212529;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+#footer ul {
+	list-style-type: none;
+	padding-left: 0;
+	line-height: 2.2;
+}
+#footer ul a {
+	margin-right: 5px;
+}
+
+#footer h5 {
+	font-size: 18px;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+#footer a {
+	color: #aaa;
+}
+
+#footer a:hover,
+#footer a:focus {
+	text-decoration: none;
+	color: white;
+}
+
+#footer .social-networks {
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+#footer .footer-items .fa {
+	font-size: 17px;
+	margin-bottom: 5px;
+	background-color: white;
+	color: #212529;
+	border-radius: 50%;
+	padding-bottom: 25px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	line-height: 31px;
+	text-decoration: none;
+	transition: color 1s;
+}
+
+#footer .footer-items {
+	margin: auto;
+	padding-left: 50px;
+	font-size: 15px;
+}
+
+#footer .fa-facebook:hover,
+#footer .fa-instagram:hover,
+#footer .fa-whatsapp:hover {
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #182c39;
+}
+
+
+.footer-copyright {
+	background-color: #10222e;
+}
+
+.footer-copyright p {
+	text-align: center;
+	color: #ccc;
+	font-size: 15px;
+	padding: 10px 0;
+	margin-bottom: 0;
+}
+
+#footer .hr-foot {
+	width: 80%;
+  	margin: 10px auto;
+  	border: 1px solid #fff;
+}
+
