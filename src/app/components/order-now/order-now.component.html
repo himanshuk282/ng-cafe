@@ -1,14 +1,66 @@
-<div class="container-fluid order-container">
-    <div class="row">
-        <div class="col d-flex flex-column justify-content-center">
-            <div class="card text-center" style="width: 18rem;">
-                <img src="../../../assets/slide1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Order on Whatsapp</h5>
-                    <p class="card-text">Please click the button to contact us on whatsapp and place the order.</p>
-                    <a class="btn btn-primary" (click)="openWhatsapp()">Order Now</a>
+<div class="container-fluid order-container px-0">
+    <div class="row w-100 d-flex justify-content-center">
+        <div class="col-md-6 col-sm-12">
+            <form class="content-box text-center order-form">
+                <h2>Welcome to Our Restaurant</h2>
+                <p>We provide delicious food and excellent service. Please click order now.</p>
+                <div class="row">
+                    <div class="col mb-3">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect">
+                                <option selected value="1">Barabanki</option>
+                            </select>
+                            <label for="floatingSelect">Location</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect2">
+                                <option selected value="1">Trend Cafe</option>
+                            </select>
+                            <label for="floatingSelect2">Branch</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-sm-center">
+                    <div class="col-md-6 col-sm-6 mb-3">
+                        <div class="row pe-0 pe-sm-3 ms-3 ms-sm-0">
+                            <div class="col-12 border border-3 border-success rounded ms-0 ms-sm-auto">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Pick-up
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mb-3">
+                        <div class="row ms-3 ms-sm-0">
+                            <div class="col-12 border border-3 border-success rounded me-auto">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                        checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Home Delivery
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="row ms-3 ms-sm-0">
+                    <div class="col d-flex justify-content-start justify-content-sm-center">
+                        <button class="btn btn-sm text-black bg-success" (click)="openWhatsapp()"><i
+                                class="fa fa-whatsapp"></i>&nbsp;Order Now</button>
+                    </div>
+                </div>
+                <!-- <button class="icon-button" (click)="onZomatoRedirect()"><img src="../../../assets/zomato-logo.png" alt="Zomato Icon" width="30"></button> -->
+                <!-- <button class="icon-button" (click)="onSwiggyRedirect()"><img src="../../../assets/swiggy-logo.png" alt="Swiggy Icon" width="30"></button> -->
+            </form>
         </div>
     </div>
 </div>
