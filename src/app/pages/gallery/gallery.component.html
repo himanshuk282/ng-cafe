@@ -1,0 +1,55 @@
+<div class="container text-center py-5">
+	<div class="mx-auto" style="max-width: 700px;">
+	<h1 class="mt-2">Gallery</h1>
+	<p class="lead">At trend cafe, customers are our priority. We plan, and you enjoy.</p>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-md-8">
+			<div class="row justify-content-center">
+				<a class="col-sm-3" data-bs-toggle="modal" data-bs-target="#modalLightBox">
+					<img data-bs-target="#lightboxCarousel" data-bs-slide-to="0" src="https://unsplash.it/200.jpg?image=250" class="img-fluid">
+				</a>
+				<a href="#" class="col-sm-3" data-bs-toggle="modal" data-bs-target="#modalLightBox">
+					<img data-bs-target="#lightboxCarousel" data-bs-slide-to="1" src="https://unsplash.it/200.jpg?image=251" class="img-fluid">
+				</a>
+				<a href="#" class="col-sm-3" data-bs-toggle="modal" data-bs-target="#modalLightBox">
+					<img data-bs-target="#lightboxCarousel" data-bs-slide-to="2" src="https://unsplash.it/200.jpg?image=252" class="img-fluid">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="modalLightBox" tabindex="-1" aria-labelledby="modalLightBoxLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header bg-dark text-white">
+				<h5 class="modal-title" id="modalLightBoxLabel">Gallery Header</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div id="lightboxCarousel" class="carousel slide">
+					<div class="carousel-inner ratio ratio-16x9 bg-light">
+						<div class="carousel-item text-center active">
+							<img src="https://unsplash.it/1600/900.jpg?image=250" class="img-fluid mh-100">
+						</div>
+						<div class="carousel-item text-center">
+							<img src="https://unsplash.it/1600/1200.jpg?image=251" class="img-fluid mh-100">
+						</div>
+						<div class="carousel-item text-center">
+							<img src="https://unsplash.it/1200/1000.jpg?image=252" class="img-fluid mh-100">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
