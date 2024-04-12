@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SocialRedirectService } from '../../core/services/social-redirect.service';
 
 @Component({
   selector: 'app-order-now',
@@ -8,14 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './order-now.component.css'
 })
 export class OrderNowComponent {
+  private socialService = inject(SocialRedirectService);
+
   openWhatsapp(){
-    var phoneNumber = '0123456789';
-    var message = 'Message to contact whatsapp business';
-
-    // URL to open WhatsApp with phone number and message
-    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-    // Open WhatsApp in a new tab or window
-    window.open(whatsappUrl, '_blank');
+    this.socialService.redirectToWhatsapp();
   }
 }

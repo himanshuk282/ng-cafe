@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { SocialRedirectService } from '../../core/services/social-redirect.service';
 
 declare var bootstrap: any;
 
@@ -10,8 +11,9 @@ declare var bootstrap: any;
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit {
-  zomatoUrl:string = "http://zoma.to/r/19891237";
-  swiggyUrl:string = "https://www.swiggy.com/restaurants/trend-cafe-harjeet-bhawan-court-road-nawabganj-bharabanki-500620";
+
+  private socialService = inject(SocialRedirectService);
+
   beverageCount:number = 0;
   //same process
   breakfastCount:number = 0;
@@ -22,13 +24,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {  }
   onZomatoRedirect(){
-    window.open(this.zomatoUrl, '_blank');
+    this.socialService.redirectToZomato();
   }
   onSwiggyRedirect(){
-    window.open(this.swiggyUrl, '_blank');
+    this.socialService.redirectToSwiggy();
   }
   onWhatsappRedirect(){
-    window.open(this.swiggyUrl, '_blank');
+    this.socialService.redirectToWhatsapp();
   }
 
   beverageCountstop:any = setInterval(()=>{

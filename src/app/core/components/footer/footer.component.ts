@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { SocialRedirectService } from '../../services/social-redirect.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,22 +9,18 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  instagramUrl:string = "https://www.instagram.com/__trendcafe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
-  facebookUrl:string = "https://www.facebook.com/trendcafebarabanki";
-  mapUrl:string = "https://maps.app.goo.gl/iLWLwwWfFvMBFtsJ8";
+  private socialService = inject(SocialRedirectService);
+  
   onInstagramRedirect(){
-    window.open(this.instagramUrl, '_blank');
+    this.socialService.redirectToInstagram();
   }
   onFacebookRedirect(){
-    window.open(this.facebookUrl, '_blank');
+    this.socialService.redirectToFacebook();
   }
   onWhatsappRedirect(){
-    var phoneNumber = "0123456789";
-    var message = "Hello";
-    var whatsappUrl:string = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    this.socialService.redirectToWhatsapp();
   }
   onMapRedirect(){
-    window.open(this.mapUrl, '_blank');
+    this.socialService.redirectToMaps();
   }
 }
